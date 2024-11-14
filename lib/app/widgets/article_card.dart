@@ -15,7 +15,7 @@ class ArticleCard extends StatelessWidget {
     return InkWell(
       onTap: () {
         // Переход к подробной странице вакансии, передаем объект через extra
-        context.go('/home/article/${article.id}', extra: article);
+        context.push('/home/article/${article.id}', extra: article);
       },
       borderRadius: BorderRadius.circular(5),
       child: Row(
